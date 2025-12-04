@@ -33,3 +33,26 @@ I used a **Nested IF Statement** to segment successful projects into high-value 
 
 ```excel
 =IF(K2="failed", "Failed", IF(AND(K2="successful", N2>=10000), "Viral Hit", IF(K2="successful", "Funded", "Other")))
+
+Category Definitions:
+
+Viral Hit: Successful status AND raised ≥ $10,000 USD.
+
+Funded: Successful status AND raised < $10,000 USD.
+
+Failed: Project failed to reach the goal.
+
+📈 Key Insights & Results
+The Winner: The Design category (specifically Product Design) has the highest probability of becoming a "Viral Hit."
+
+The Volume Trap: While "Film & Video" has the highest volume of projects, its viral success rate is significantly lower than niche categories like "Tabletop Games."
+
+📷 Portfolio Visuals
+1. The Analysis Dashboard
+Showing the "Success Rate" pivot table and chart proving Design is the winner.
+
+2. Complex Logic Implementation
+Showing the nested IF/AND formula used to categorize the 300k rows.
+
+3. Data Cleaning Verification
+Showing the cleaned dataset with valid Dates, right-aligned Currency, and hidden "Trap" columns.
