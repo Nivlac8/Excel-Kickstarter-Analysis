@@ -1,4 +1,4 @@
-# 📊 Kickstarter Campaign Analysis (Excel)
+<img width="532" height="362" alt="Pivot Chart" src="https://github.com/user-attachments/assets/008da512-b028-4b35-9cb7-a46428037261" /># 📊 Kickstarter Campaign Analysis (Excel)
 
 ## 🎯 Executive Summary
 The goal of this project was to analyze a dataset of **300,000+ crowdfunding campaigns** to identify the specific factors that differentiate "Viral" global hits from standard success stories.
@@ -8,7 +8,7 @@ Acting as a Data Analyst, I performed an end-to-end audit: cleaning corrupted ra
 ## 📂 The Dataset
 **Source:** [Kaggle - Kickstarter Projects (Raw Data)](https://www.kaggle.com/datasets/kemical/kickstarter-projects)  
 **Volume:** ~375,000 Rows, 15 Columns  
-**Condition:** The raw data was "dirty," containing mixed currencies (GBP, EUR, AUD), corrupted row shifts, Unix timestamp errors, and system glitches (dates in the year 2042).
+**Condition:** The raw data was "dirty," containing mixed currencies (GBP, EUR, AUD), corrupted row shifts, Unix timestamp errors, and system glitches.
 
 ## 🛠️ Technical Skills Applied
 * **Advanced Data Cleaning:** Used filtering techniques to identify and remove "Ghost Rows" (blanks) and "Time Traveler" data (future dates).
@@ -51,7 +51,10 @@ Based on the data analysis, simply launching in a popular category like Film doe
 
 ### 1. The Analysis Dashboard
 Showing the "Success Rate" pivot table and chart proving Design is the winner.
-![Dashboard](Dashboard.png)
+![Dashboard](<img width="482" height="364" alt="Pivot Table" src="https://github.com/user-attachments/assets/3f9fcbfa-e49e-4ee0-a729-0275dcff9164" />
+ )
+ ![Dashboard](<img width="532" height="362" alt="Pivot Chart" src="https://github.com/user-attachments/assets/590d643e-ecec-4f77-8878-d7252a884c78" />
+ )
 
 ### 2. Complex Logic Implementation
 Showing the nested IF/AND formula used to categorize the 300k rows.
