@@ -51,9 +51,9 @@ Based on the data analysis, simply launching in a popular category like Film doe
 
 ### 1. The Analysis Dashboard
 Showing the "Success Rate" pivot table and chart proving Design is the winner.
-![Dashboard](<img width="482" height="364" alt="Pivot Table" src="https://github.com/user-attachments/assets/3f9fcbfa-e49e-4ee0-a729-0275dcff9164" />
+<img width="482" height="364" alt="Pivot Table" src="https://github.com/user-attachments/assets/3f9fcbfa-e49e-4ee0-a729-0275dcff9164" />
  )
- ![Dashboard](<img width="532" height="362" alt="Pivot Chart" src="https://github.com/user-attachments/assets/590d643e-ecec-4f77-8878-d7252a884c78" />
+(<img width="532" height="362" alt="Pivot Chart" src="https://github.com/user-attachments/assets/590d643e-ecec-4f77-8878-d7252a884c78" />
  )
 
 ### 2. Complex Logic Implementation
