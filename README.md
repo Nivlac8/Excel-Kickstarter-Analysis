@@ -52,14 +52,14 @@ Based on the data analysis, simply launching in a popular category like Film doe
 ### 1. The Analysis Dashboard
 Showing the "Success Rate" pivot table and chart proving Design is the winner.
 <img width="482" height="364" alt="Pivot Table" src="https://github.com/user-attachments/assets/3f9fcbfa-e49e-4ee0-a729-0275dcff9164" />
- )
-(<img width="532" height="362" alt="Pivot Chart" src="https://github.com/user-attachments/assets/590d643e-ecec-4f77-8878-d7252a884c78" />
- )
+ 
+<img width="532" height="362" alt="Pivot Chart" src="https://github.com/user-attachments/assets/590d643e-ecec-4f77-8878-d7252a884c78" />
 
 ### 2. Complex Logic Implementation
 Showing the nested IF/AND formula used to categorize the 300k rows.
-![Formula](Formula.png)
+<img width="750" height="40" alt="code to find status tier" src="https://github.com/user-attachments/assets/93d93214-093d-4056-a4eb-d274dce6fdfe" />
+
 
 ### 3. Data Cleaning Verification
 Showing the cleaned dataset with valid Dates, right-aligned Currency, and hidden "Trap" columns.
-![Cleaning](Cleaning.png)
+<img width="353" height="239" alt="Cleaned data example" src="https://github.com/user-attachments/assets/33fab146-705d-482b-8922-260a0c478e3a" />
