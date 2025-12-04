@@ -20,39 +20,43 @@ Acting as a Data Analyst, I performed an end-to-end audit: cleaning corrupted ra
 I transformed the raw CSV into an analytical dataset using the following pipeline:
 
 1.  **Corrupted Row Removal:** Identified rows where project names containing commas caused column shifting, resulting in text appearing in numeric columns.
-2.  **Date Integrity Fix:** * Converted text strings to valid `Short Date` format.
+2.  **Date Integrity Fix:**
+    * Converted text strings to valid `Short Date` format.
     * Removed "Time Traveler" records (Years > 2025) and "Unix Epoch" errors (Year 1970).
     * Calculated `Days_Active` using `=INT(Deadline - Launched)` to measure campaign duration.
-3.  **Currency Standardization:** * Detected a "Currency Trap" where the `Goal` column mixed Yen, Euro, and Dollars.
+3.  **Currency Standardization:**
+    * Detected a "Currency Trap" where the `Goal` column mixed Yen, Euro, and Dollars.
     * Hid the misleading columns and utilized `usd_pledged_real` for all financial calculations.
 
 ## 🧠 Business Logic (Feature Engineering)
-To solve the business question *"What makes a project a viral hit?"*, I created a new variable called **`Status_Tier`**.
-
-I used a **Nested IF Statement** to segment successful projects into high-value outliers vs. standard funding:
+To solve the business question *"What makes a project a viral hit?"*, I created a new variable called **`Status_Tier`** using this nested logic:
 
 ```excel
 =IF(K2="failed", "Failed", IF(AND(K2="successful", N2>=10000), "Viral Hit", IF(K2="successful", "Funded", "Other")))
+```
 
-Category Definitions:
+## Category Definitions
+* **Viral Hit:** Successful status AND raised ≥ $10,000 USD.
+* **Funded:** Successful status AND raised < $10,000 USD.
+* **Failed:** Project failed to reach the goal.
 
-Viral Hit: Successful status AND raised ≥ $10,000 USD.
+## Key Insights & Results
+* **The Winner:** The Design category (specifically Product Design) has the highest probability of becoming a "Viral Hit."
+* **The Volume Trap:** While "Film & Video" has the highest volume of projects, its viral success rate is significantly lower than niche categories like "Tabletop Games."
 
-Funded: Successful status AND raised < $10,000 USD.
+## Conclusion & Recommendations
+Based on the data analysis, simply launching in a popular category like Film does not guarantee high returns. To maximize the probability of a "Viral Hit" (raising >$10k USD), creators and investors should focus on the **Product Design** and **Tabletop Games** sectors, which demonstrate a significantly higher success-to-failure ratio compared to other categories.
 
-Failed: Project failed to reach the goal.
+## Portfolio Visuals
 
-📈 Key Insights & Results
-The Winner: The Design category (specifically Product Design) has the highest probability of becoming a "Viral Hit."
-
-The Volume Trap: While "Film & Video" has the highest volume of projects, its viral success rate is significantly lower than niche categories like "Tabletop Games."
-
-📷 Portfolio Visuals
-1. The Analysis Dashboard
+### 1. The Analysis Dashboard
 Showing the "Success Rate" pivot table and chart proving Design is the winner.
+![Dashboard](Dashboard.png)
 
-2. Complex Logic Implementation
+### 2. Complex Logic Implementation
 Showing the nested IF/AND formula used to categorize the 300k rows.
+![Formula](Formula.png)
 
-3. Data Cleaning Verification
+### 3. Data Cleaning Verification
 Showing the cleaned dataset with valid Dates, right-aligned Currency, and hidden "Trap" columns.
+![Cleaning](Cleaning.png)
