@@ -1,4 +1,4 @@
-<img width="532" height="362" alt="Pivot Chart" src="https://github.com/user-attachments/assets/008da512-b028-4b35-9cb7-a46428037261" /># 📊 Kickstarter Campaign Analysis (Excel)
+# 📊 Kickstarter Campaign Analysis (Excel)
 
 ## 🎯 Executive Summary
 The goal of this project was to analyze a dataset of **300,000+ crowdfunding campaigns** to identify the specific factors that differentiate "Viral" global hits from standard success stories.
